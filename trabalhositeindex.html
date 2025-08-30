@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabiele Freitas</title> /*titulo da aba do navegador*/
+  <style> /*estilos gerais da pagina*/
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #c74040;
+    }
+    header {
+      background-color: #24a7b6;
+      color: rgb(3, 2, 2);
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #222;
+    }
+    img {
+      max-width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sobre"> <!--sobre mim-->
+    <h2>Sobre Mim</h2>
+    <img src="imagens/perfil.png" alt="Imagem de perfil" width="300"> 
+    <p>Meu nome é Fabiele Freitas Nunes, tenho 21 anos e faço aniversário dia 27/04. Minha cor favorita é azul. Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Uninter. Meus hobbies incluem ler, fazer academia e assistir filmes e séries.</p>
+  </section>
+  <section id="formacao">
+    <h2>Formação</h2>
+    <p>Espanhol</p>
+    <p>Etiqueta e postura profissional</p>
+    <p>Administração empresarial</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfólio</h2> <!--links de projetos-->
+    <ul>
+      <li><a href="file:///C:/Users/Acer/OneDrive/noticia.html.html">Notícia</a></li>
+      <li><a href="file:///C:/Users/Acer/OneDrive/Pictures/index.html%20trabalho.html">trabalho</a></li>
+    </ul>
+  </section>
+
+  <section id="contato"> <!--sessao de contatos e formulario-->
+    <h2>Contato</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Digite seu email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>
